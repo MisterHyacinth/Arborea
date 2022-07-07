@@ -1,6 +1,7 @@
 package net.misterhyacinth.prettierparrots;
 
 import net.fabricmc.api.ModInitializer;
+import net.misterhyacinth.prettierparrots.item.PrettierParrotsItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,7 @@ public class PrettierParrotsMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		PrettierParrotsItems.registerModItems();
 
 	}
 }
