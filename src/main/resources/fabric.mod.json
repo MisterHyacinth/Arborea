@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "prettierparrots",
+  "version": "${version}",
+
+  "name": "Prettier Parrots",
+  "description": "Improving your Psittacine Companions.",
+  "authors": [
+    "Mister Hyacinth"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/prettierparrots/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.misterhyacinth.prettierparrots.PrettierParrotsMod"
+    ],
+    "client": [
+      "net.misterhyacinth.prettierparrots.PrettierParrotsClient"
+    ]
+  },
+  "mixins": [
+    "prettierparrots.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
